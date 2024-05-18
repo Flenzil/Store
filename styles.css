@@ -1,6 +1,6 @@
 html {
     font-family: Arial;
-    background-color: "#ede0fb";
+    background-color: #ede0fb;
 }
 
 body {
@@ -31,12 +31,14 @@ img {
     left: 10px;
 }
 
-.image-grid {
+.product-grid {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-
+    background-color: #cabcff;
+    padding: 10px 10px 10px 10px;
+    border:5px solid purple;
 }
 
 
