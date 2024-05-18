@@ -1,6 +1,6 @@
 html {
     font-family: Arial;
-    background-color: #F6EFFF;
+    background-color: "#ede0fb";
 }
 
 body {
@@ -29,6 +29,14 @@ img {
     white-space: nowrap;
     position: relative;
     left: 10px;
+}
+
+.image-grid {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
 }
 
 
