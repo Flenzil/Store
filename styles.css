@@ -1,6 +1,7 @@
 html {
     font-family: Arial;
-    background-color: #ede0fb;
+    background-color: #fbf7ff;
+    color: #4e4e4e
 }
 
 body {
@@ -36,10 +37,38 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    background-color: #cabcff;
+    background: #cabcff;
     padding: 10px 10px 10px 10px;
-    border:5px solid purple;
+    border:5px solid #4e4e4e;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size: 30px;
+    background-color: rgba(1,1,1,0.5);
+    visibility: hidden;
+
 }
 
 
+@media (hover:hover){
+    .product:hover{
+        opacity: 1;
+    }
+
+    .product:hover .description{
+        visibility: visible;
+    }
+}
 
