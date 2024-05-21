@@ -86,6 +86,10 @@ td {
     border:5px solid #4e4e4e;
 }
 
+#product-list table tr{
+    border: 1px dashed gray;
+}
+
 #product-list img{
     width: 200px;
     height: 200px;
@@ -98,8 +102,19 @@ td {
 
 #product-list .description {
     position: relative;
+    color: black;
     top: 50%;
+    transform: translate(0, -50%);
     visibility: visible;
+}
+
+#product-list .price {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 @media (max-width: 550px){
