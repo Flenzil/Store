@@ -99,9 +99,9 @@ td {
     visibility: visible;
 }
 
-@media (max-width: 200px){
+@media (max-width: 550px){
     #product-list img{
-        width: auto;
+        width: 100%;
         height: auto;
     }
 }
