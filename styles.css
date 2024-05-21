@@ -79,10 +79,13 @@ td {
 
 /* Style for product in list mode*/
 #product-list {
+    visibility: hidden;
+    display: none;
     background: #cabcff;
     padding: 10px 10px 10px 10px;
     border:5px solid #4e4e4e;
 }
+
 #product-list img{
     width: 200px;
     height: 200px;

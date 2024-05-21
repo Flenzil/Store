@@ -2,7 +2,7 @@ function productList() {
     document.getElementById("product-grid").style.visibility = "hidden";
     document.getElementById("product-grid").style.display = "none";
     document.getElementById("product-list").style.visibility = "visible";
-    document.getElementById("product-list").style.display = "";
+    document.getElementById("product-list").style.display = "block";
 }
 
 function productGrid() {
