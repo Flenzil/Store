@@ -7,67 +7,111 @@ html {
 body {
     display:flex;
     flex-direction:column;
-    align-items: center;
-}
-
-img {
-    width: 300px;
-    height: 300px;
-}
-
-.header {
-    display:flex;
     align-items:center;
 }
 
-.header img {
+table {
+    border : 1px solid;
+    width: 100%;
+}
+
+tr {
+    display:flex;
+}
+
+td {
+    flex: 1;
+}
+
+#header img {
     float: left;
     width: 50px;
     height: 50px;
 }
 
-.header h1{
+#header h1{
     white-space: nowrap;
     position: relative;
     left: 10px;
 }
 
-.product-grid {
+#product-container{
+    width: 80%;
+}
+
+.description {
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+}
+
+/* Style for product in grid mode*/
+#product-grid {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, max-content));
+    grid-column-gap: 2.5%;
     grid-row-gap: 10px;
+    justify-content: center;
+    background: #cabcff;
+    padding: 10px 10px 10px 1%;
+    border:5px solid #4e4e4e;
+}
+
+
+#product-grid .product {
+    opacity:0.85;
+    position:relative;
+}
+
+#product-grid img {
+    width: 100%;
+    height: auto;
+}
+
+#product-grid .description {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
+    visibility: hidden;
+    background-color: rgba(1,1,1,0.5);
+}
+
+/* Style for product in list mode*/
+#product-list {
     background: #cabcff;
     padding: 10px 10px 10px 10px;
     border:5px solid #4e4e4e;
 }
+#product-list img{
+    width: 200px;
+    height: 200px;
+}
 
-.product {
+#product-list .product {
+    display:flex;
     position: relative;
-    text-align: center;
-    opacity: 0.85;
 }
 
-.description {
-    position: absolute;
+#product-list .description {
+    position: relative;
     top: 50%;
-    left: 50%;
-    width: 300px;
-    transform: translate(-50%, -50%);
-    color: gray;
-    font-size: 30px;
-    background-color: rgba(1,1,1,0.5);
-    visibility: hidden;
-
+    visibility: visible;
 }
 
+@media (max-width: 200px){
+    #product-list img{
+        width: auto;
+        height: auto;
+    }
+}
 
 @media (hover:hover){
-    .product:hover{
+    #product-grid .product:hover{
         opacity: 1;
     }
 
-    .product:hover .description{
+    #product-grid .product:hover .description{
         visibility: visible;
     }
 }
