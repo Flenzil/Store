@@ -79,7 +79,6 @@ td {
 
 /* Style for product in list mode*/
 #product-list {
-    visibility: hidden;
     display: none;
     background: #cabcff;
     padding: 10px 10px 10px 10px;
