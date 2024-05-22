@@ -4,7 +4,7 @@ html {
     color: #4e4e4e
 }
 
-body {
+body{
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -35,7 +35,9 @@ td {
     left: 10px;
 }
 
-#product-container{
+#product-container {
+    display: flex;
+    flex-direction: column;
     width: 80%;
 }
 
@@ -43,6 +45,20 @@ td {
     text-align: center;
     color: gray;
     font-size: 30px;
+}
+
+#layout-buttons {
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+#layout-buttons button {
+    font-size: 30px;
+    color: white;
+    background-color: #5412d9;
+    padding: 10px;
+    border-radius: 8px;
+    border-color: #5412d9;
 }
 
 /* Style for product in grid mode*/
