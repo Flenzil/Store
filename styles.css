@@ -20,6 +20,7 @@ tr {
 }
 
 td {
+    position: relative;
     flex: 1;
 }
 
@@ -109,27 +110,31 @@ td {
     border: 1px dashed gray;
 }
 
+
 #product-list img{
     width: 200px;
     height: 200px;
 }
+
 
 #product-list .product {
     display:flex;
     position: relative;
 }
 
+
 #product-list .description {
-    position: relative;
+    position:relative;
     color: black;
-    top: 50%;
-    transform: translate(0, -50%);
     visibility: visible;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 
 #product-list .price {
     font-size: 30px;
     text-align: center;
+    justify-content: center;
     color: black;
     position: relative;
     top: 50%;
@@ -151,5 +156,10 @@ td {
     #product-grid .product:hover .description{
         visibility: visible;
     }
-}
+
+    #product-list tr:hover{
+        background: #f2f3ff;
+        outline:none;
+        cursor: pointer;
+    }
 
