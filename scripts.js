@@ -1,11 +1,60 @@
 let products = [
     {
         "productName": "Rise of the Redscales: Complete Miniature Pack",
-        "productPrice": "$45",
+        "productPrice": "$45.00",
         "productImage": "images/RiseOfTheRedscales.jpg",
         "productAlt": "Rise of the Redscales",
         "productLink": "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066"
-    }
+    },
+    {
+        "productName": "Basalisk",
+        "productPrice": "$3.50",
+        "productImage": "images/Basalisk.jpg",
+        "productAlt": "Basalisk",
+        "productLink": "https://www.myminifactory.com/object/3d-print-basilisk-330043"
+    },
+    {
+        "productName": "Chain Devil",
+        "productPrice": "$2.50",
+        "productImage": "images/Chain Devil.jpg",
+        "productAlt": "Chain Devil",
+        "productLink": "https://www.myminifactory.com/object/3d-print-chain-devil-330045"
+    },
+    {
+        "productName": "Manticore",
+        "productPrice": "$3.50",
+        "productImage": "images/Manticore.jpg",
+        "productAlt": "Manticore",
+        "productLink": "https://www.myminifactory.com/object/3d-print-manticore-330052"
+    },
+    {
+        "productName": "Owlbear",
+        "productPrice": "$3.00",
+        "productImage": "images/Owlbear.jpg",
+        "productAlt": "Owlbear",
+        "productLink": "https://www.myminifactory.com/object/3d-print-owlbear-330053"
+    },
+    {
+        "productName": "Spawn Of Juiblex",
+        "productPrice": "$5.00",
+        "productImage": "images/Spawn of Juiblex.jpg",
+        "productAlt": "Spawn of Juiblex",
+        "productLink": "https://www.myminifactory.com/object/3d-print-spawn-of-juiblex-giant-slime-330056"
+    },
+    {
+        "productName": "Young Dragon",
+        "productPrice": "$5.00",
+        "productImage": "images/Young Blue Dragon.jpg",
+        "productAlt": "Young Dragon",
+        "productLink": "https://www.myminifactory.com/object/3d-print-young-dragon-330058"
+    },
+    {
+        "productName": "Dragonborn Scientist",
+        "productPrice": "$2.50",
+        "productImage": "images/The alchemist.jpg",
+        "productAlt": "Dragonborn Scientist",
+        "productLink": "https://www.myminifactory.com/object/3d-print-dragonborn-scientist-330039"
+    },
 ];
 
 function initPage() {
