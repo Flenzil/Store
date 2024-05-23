@@ -6,7 +6,7 @@
         <script src="scripts.js"></script>
     </head>
 
-    <body>
+    <body onload="initPage()">
         <div id="header">
             <img src="images/StoreLogo.jpg" alt="Flenzil">
             <h1>The Store</h1>
@@ -17,78 +17,12 @@
 
         <h2>Things</h2>
 
-        <div id="product-container">
+        <div id="product-container" >
 
             <div id="layout-buttons">
                 <button type="button" onclick="productGrid()" id="button-grid">Grid</button>
                 <button type="button" onclick="productList()" id="button-list">List</button>
             </div>
-
-            <div id="product-grid">
-                <div class = "product">
-                    <a href = "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066">
-                        <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                        <div class = "description">Rise of the Redscales: Complete Miniature Pack</div>
-                    </a>
-                </div>
-                <div class = "product">
-                    <a href = "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066">
-                        <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                        <div class = "description">Rise of the Redscales: Complete Miniature Pack</div>
-                    </a>
-                </div>
-                <div class = "product">
-                    <a href = "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066">
-                        <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                        <div class = "description">Rise of the Redscales: Complete Miniature Pack</div>
-                    </a>
-                </div>
-                <div class = "product">
-                    <a href = "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066">
-                        <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                        <div class = "description">Rise of the Redscales: Complete Miniature Pack</div>
-                    </a>
-                </div>
-                <div class = "product">
-                    <a href = "https://www.myminifactory.com/object/3d-print-rise-of-the-redscales-complete-miniature-pack-330066">
-                        <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                        <div class = "description">Rise of the Redscales: Complete Miniature Pack</div>
-                    </a>
-                </div>
-            </div>
-
-            <div id="product-list">
-                <table id = "product-table">
-                    <tr id="row-1">
-                        <div class = "product">
-                            <td>
-                                <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                            </td>
-                            <td><p class="description">Rise of the Redscales: Complete Miniature Pack</p></td>
-                            <td><p class="price">$45</p></td>
-                        </div>
-                    </tr>
-                    <tr id="row-2">
-                        <div class = "product">
-                            <td>
-                                <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                            </td>
-                            <td><p class="description">Rise of the Redscales: Complete Miniature Pack</p></td>
-                            <td><p class="price">$45</p></td>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div class = "product">
-                            <td>
-                                <img src="images/RiseOfTheRedscales.jpg" alt="Rise of the Redscales">
-                            </td>
-                            <td><p class="description">Rise of the Redscales: Complete Miniature Pack</p></td>
-                            <td><p class="price">$45</p></td>
-                        </div>
-                    </tr>
-                </table>
-            </div>
-
         </div>
     </body>
 </html>
