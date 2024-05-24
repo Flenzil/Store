@@ -65,6 +65,7 @@ function initPage() {
 function productList() {
     document.querySelector("#product-list").style.display = "block";
     document.querySelector("#product-grid").style.display = "none";
+    document.querySelector("#button-list").setAttribute("id", "button-list-active");
 }
 
 function productGrid() {
@@ -111,15 +112,14 @@ function makeProductList() {
     products.forEach((product) => {
         let row = table.insertRow();
 
-        const cell1 = document.createElement("td");
         const productImg = document.createElement("img");
         productImg.src = product.productImage;
 
-        const productDescription = document.createElement("p");
+        const productDescription = document.createElement("h2");
         productDescription.setAttribute("class", "description");
-        productDescription.innerHTML = product.productName;
+        productDescription.innerHTML = product.productName.toUpperCase();
 
-        const productPrice = document.createElement("p");
+        const productPrice = document.createElement("h2");
         productPrice.setAttribute("class", "price");
         productPrice.innerHTML = product.productPrice;
 

@@ -1,7 +1,23 @@
 html {
-    font-family: Arial;
+    font-family: courier;
+    font-weight: 900;
     background-color: #fbf7ff;
-    color: #4e4e4e
+    color: #4e4e4e;
+    width: 100vw - 20px;
+    border: 10px dashed black;
+    background: repeating-linear-gradient(
+        -45deg,
+        white 0px,
+        #fbf7ff 4px,
+        transparent 4px,
+        white 12px
+    );
+    
+}
+
+button {
+    font-family: courier;
+    font-weight: bold;
 }
 
 body{
@@ -11,8 +27,8 @@ body{
 }
 
 table {
-    border : 1px solid;
     width: 100%;
+    border-collapse: collapse;
 }
 
 tr {
@@ -66,16 +82,34 @@ td {
     border-color: #5412d9;
 }
 
+#button-grid-active {
+    color: black;
+    background-color: white;
+}
+
+#button-list-active {
+    color: black;
+    background-color: white;
+}
+
+
 /* Style for product in grid mode*/
 #product-grid {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
-    grid-column-gap: 2.5%;
+    grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-content: center;
-    background: #cabcff;
-    padding: 10px 10px 10px 1%;
-    border:5px solid #4e4e4e;
+    padding: 10px 10px 10px 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        white 0px,
+        #cabcff 4px,
+        transparent 4px,
+        white 12px
+    );
+    background-origin: border-box;
+    border:10px dashed black;
 }
 
 
@@ -103,13 +137,21 @@ td {
     display: none;
     background: #cabcff;
     padding: 10px 10px 10px 10px;
-    border:5px solid #4e4e4e;
+    border:10px dashed black;
+    background: repeating-linear-gradient(
+        45deg,
+        #E1CAFF 0px,
+        #cabcff 4px,
+        #cabcff 4px,
+        #cabcff 12px
+    );
+    background-origin: border-box;
+    background-clip: content-box;
 }
 
 #product-list table tr{
-    border: 1px dashed gray;
+    border: 2px dashed black;
 }
-
 
 #product-list img{
     width: 200px;
@@ -161,5 +203,10 @@ td {
         background: #f2f3ff;
         outline:none;
         cursor: pointer;
+    }
+
+    #layout-buttons button:hover{
+        background: white;
+        color: black;
     }
 
